@@ -1,0 +1,166 @@
+/* Payment Success Page */
+.payment-success-page {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-section {
+  padding: 180px 0;
+}
+
+.success-card {
+  text-align: center;
+}
+
+.success-icon {
+  width: 180px;
+  height: 180px;
+  margin: 60px auto;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-icon svg {
+  width: 140px;
+  height: 140px;
+  color: #fff;
+}
+
+.success-icon.error-icon {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.success-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.success-message {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 32px;
+}
+
+.order-info {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item .label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.info-item .value {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.info-item .value.amount {
+  color: #f59e0b;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6bb142 0%, #568e34 100%);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(64, 158, 255, 0.3);
+}
+
+.btn-outline {
+  background: #fff;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-outline:hover {
+  border-color: #6bb142;
+  color: #6bb142;
+}
+
+@media (max-width: 640px) {
+  .success-card {
+    padding: 32px 24px;
+  }
+
+  .success-section {
+    padding: 0;
+  }
+
+  .success-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .success-icon svg {
+    width: 132px;
+    height: 132px;
+  }
+
+  .success-card h2 {
+    font-size: 22px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

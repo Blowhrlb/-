@@ -1,0 +1,581 @@
+.application-resources-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* 页面标题 - 紧凑�?*/
+.page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    background: linear-gradient(135deg, rgba(13, 27, 42, 0.85) 0%, rgba(51, 126, 204, 0.75) 100%),
+                url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.page-header h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.page-header p {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    opacity: 0.9;
+}
+
+/* 介绍内容 - 紧凑�?*/
+.intro-section {
+    padding: 32px 0;
+    background: #fff;
+}
+
+.intro-desc {
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto 24px;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.8;
+    background: url('../images/application_resources.png') no-repeat center;
+    background-size: cover;
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 420px;
+}
+
+.pain-points h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.pain-card {
+    /* background: var(--tech-bg-card); */
+    background: url('../images/tongdian.png') no-repeat center;
+    background-size: cover;
+    border-radius: 12px;
+    padding: 20px;
+    
+}
+
+.pain-number {
+    display: inline-block;
+    padding: 3px 12px;
+    background: var(--el-color-success);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.pain-card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--tech-text-primary);
+}
+
+.pain-card .solution,
+.pain-card .result,
+.pain-card .outcome {
+    font-size: 13px;
+    text-shadow: #041d45 2px 2px 0;
+    color: #e2e8f0;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.pain-card strong {
+    color: var(--el-color-success);
+}
+
+/* 筛选区�?- 紧凑�?*/
+.filter-section {
+    padding: 16px 0;
+    /* background: var(--tech-bg-card); */
+    /* border-top: 1px solid var(--tech-border); */
+    /* border-bottom: 1px solid var(--tech-border); */
+    background: url('../images/job_small_bg.png') no-repeat center;
+    background-size: cover;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.filter-group label {
+    font-size: 12px;
+    color: var(--tech-text-secondary);
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--tech-border);
+    border-radius: 8px;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.filter-group .search-input {
+    width: 100%;
+    padding: 8.91px 12px;
+    border: 1px solid var(--tech-border);
+    border-radius: 8px;
+    background: #fff;
+    font-size: 13px;
+    transition: border-color 0.2s;
+}
+
+.filter-group .search-input:focus {
+    outline: none;
+    border-color: var(--el-color-primary);
+}
+
+.filter-group select:hover,
+.filter-group select:focus {
+    border-color: var(--el-color-primary);
+    outline: none;
+}
+
+.filter-bar .btn {
+    flex-shrink: 0;
+    padding: 8px 16px;
+}
+
+.filter-bar .btn-secondary {
+    background: var(--tech-bg-dark);
+    color: var(--tech-text-secondary);
+}
+
+.filter-bar .btn-secondary:hover {
+    background: var(--el-color-primary);
+    color: white;
+    border-color: var(--el-color-primary);
+}
+
+/* 按钮样式 - 紧凑�?*/
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: var(--el-color-primary);
+    color: white;
+    border-color: var(--el-color-primary);
+}
+
+.btn-primary:hover {
+    background: #568e34;
+    border-color: #568e34;
+}
+
+.btn-secondary {
+    background: var(--tech-bg-dark);
+    color: var(--tech-text-secondary);
+    border: 1px solid var(--tech-border);
+}
+
+.btn-secondary:hover {
+    background: var(--el-color-primary);
+    color: white;
+    border-color: var(--el-color-primary);
+}
+
+/* 岗位列表 - 紧凑�?*/
+.jobs-section {
+    height: 100%;
+    min-height: 920px;
+    padding: 24px 0;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+}
+
+.job-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.job-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--el-color-success), #8fca6f);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.job-item:hover {
+    box-shadow: 0 20px 40px -10px rgba(64, 158, 255, 0.15);
+    border-color: var(--el-color-success);
+    transform: translateY(-4px);
+}
+
+.job-item:hover::before {
+    opacity: 1;
+}
+
+.job-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.job-top {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.job-logo {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.job-logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.job-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.job-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.job-title-row h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #1e293b;
+    flex: 1;
+}
+
+.job-salary {
+    font-size: 17px;
+    font-weight: 700;
+    color: #f59e0b;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.company {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}
+
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.job-tags .tag {
+    padding: 4px 12px;
+    background: #f1f5f9;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #64748b;
+    white-space: nowrap;
+}
+
+.job-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 12px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.job-address {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.job-address svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.job-remarks {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.job-item .btn {
+    width: 100%;
+    margin: 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0 0 16px 16px;
+    background: linear-gradient(135deg, #6bb142 0%, #568e34 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.job-item .btn:hover {
+    background: linear-gradient(135deg, #568e34 0%, #6bb142 100%);
+}
+
+/* 分页 - 紧凑�?*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 24px;
+    padding: 16px 0;
+}
+
+.page-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid var(--tech-border);
+    border-radius: 8px;
+    background: var(--tech-bg-card);
+    color: var(--tech-text-secondary);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.page-btn:hover {
+    border-color: var(--el-color-primary);
+    color: var(--el-color-primary);
+}
+
+.page-btn.active {
+    background: var(--el-color-primary);
+    border-color: var(--el-color-primary);
+    color: white;
+}
+
+/* HR弹窗 */
+.hr-modal-content {
+  text-align: center;
+  padding: 16px;
+}
+
+.qr-code {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 16px;
+  background: var(--tech-bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.qr-code img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.qr-tip {
+  font-size: 14px;
+  color: var(--tech-text-secondary);
+}
+
+/* 响应�?*/
+@media (max-width: 1024px) {
+    .pain-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 0 24px;
+        height: 180px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .intro-section {
+        padding: 20px 0;
+    }
+
+    .intro-desc {
+        font-size: 13px;
+        margin-bottom: 16px;
+        position: absolute;
+        top: 240px;
+        line-height: 15px;
+    }
+
+    .pain-points h3 {
+        font-size: 16px;
+    }
+
+    .pain-card {
+        padding: 16px;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .filter-group select {
+        width: 100%;
+    }
+
+    .filter-bar .btn {
+        width: 100%;
+    }
+
+    .jobs-section {
+        padding: 16px 0;
+    }
+
+    .jobs-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .job-item {
+        min-height: auto;
+    }
+
+    .job-content {
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .job-top {
+        gap: 12px;
+    }
+
+    .job-logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .job-title-row {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .job-title-row h4 {
+        font-size: 15px;
+    }
+
+    .job-salary {
+        font-size: 16px;
+    }
+
+    .job-tags {
+        gap: 6px;
+    }
+
+    .job-tags .tag {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+
+    .job-footer {
+        padding-top: 10px;
+    }
+
+    .job-address,
+    .job-remarks {
+        font-size: 11px;
+    }
+
+    .job-item .btn {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+}

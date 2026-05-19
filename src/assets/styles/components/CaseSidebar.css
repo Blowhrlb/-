@@ -1,0 +1,276 @@
+/* Case Sidebar */
+.case-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.sidebar-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+}
+
+/* Service Card */
+.service-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.service-header h3 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.service-header .icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.service-header .icon:hover {
+  transform: scale(1.1);
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.service-item:hover {
+  background: #f8fafc;
+}
+
+.service-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  color: #6bb142;
+  border-radius: 10px;
+}
+
+.service-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1e293b;
+}
+
+.service-info p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Element Plus Timeline 样式 */
+.service-list .el-timeline {
+  padding: 0;
+  margin: 0;
+}
+
+.service-list .el-timeline-item {
+  padding-bottom: 12px;
+}
+
+.service-list .el-timeline-item__wrapper {
+  padding-left: 20px;
+}
+
+.service-list .el-timeline-item__timestamp {
+  font-size: 13px;
+  color: #1e293b;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.service-list .el-timeline-item__title {
+  font-size: 12px;
+  color: #6bb142;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.service-list .el-timeline-item__node {
+  background-color: #6bb142;
+  width: 14px;
+  height: 14px;
+}
+
+.service-list .el-timeline-item--primary .el-timeline-item__node {
+  background-color: #6bb142;
+  width: 16px;
+  height: 16px;
+}
+
+.service-list .el-timeline-item--success .el-timeline-item__node {
+  background-color: #67c23a;
+  width: 16px;
+  height: 16px;
+}
+
+.service-list .el-timeline-item--hollow .el-timeline-item__node {
+  background-color: #fff;
+  border: 2px solid #6bb142;
+  width: 14px;
+  height: 14px;
+}
+
+.service-list .el-timeline-item--primary.el-timeline-item--hollow .el-timeline-item__node {
+  border-color: #6bb142;
+}
+
+.service-list .el-timeline-item--success.el-timeline-item--hollow .el-timeline-item__node {
+  border-color: #67c23a;
+}
+
+.service-list .el-timeline-item__tail {
+  left: 6px;
+  background-color: #6bb142;
+}
+
+/* 移动端适配 */
+@media (max-width: 480px) {
+  .service-list .el-timeline-item__wrapper {
+    padding-left: 16px;
+  }
+
+  .service-list .el-timeline-item__timestamp {
+    font-size: 12px;
+  }
+
+  .service-list .el-timeline-item__node {
+    width: 12px;
+    height: 12px;
+  }
+
+  .service-list .el-timeline-item--primary .el-timeline-item__node,
+  .service-list .el-timeline-item--success .el-timeline-item__node {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* Consult Card */
+.consult-card {
+  text-align: center;
+}
+
+.consult-card p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.consult-card .btn-block {
+  width: 100%;
+}
+
+/* Related Cases */
+.related-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.related-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.related-item:hover {
+  background: #f8fafc;
+}
+
+.related-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.related-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.related-info h4 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #1e293b;
+}
+
+.related-info span {
+  font-size: 12px;
+  color: #6bb142;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6bb142 0%, #568e34 100%);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(64, 158, 255, 0.3);
+}
